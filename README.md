@@ -1,25 +1,27 @@
-// constants/index.ts
+# 🏡 ALX Listing App
 
-// API endpoints and configuration values
-export const API_URL = 'https://api.example.com'
+## 📖 Project Overview
+The **ALX Listing App** is a modern, scalable Airbnb clone scaffolded using **Next.js**, **TypeScript**, **TailwindCSS**, and **ESLint**.  
+This milestone focuses on laying a clean foundation for future development — emphasizing reusable components, a modular folder structure, and production-ready configurations.
 
-// Default placeholder data for the app
-export const PLACEHOLDER_PROPERTIES = [
-  {
-    id: 1,
-    title: 'Modern Apartment in City Center',
-    description: 'A stylish and comfortable apartment located in the heart of the city.',
-    imageUrl: '/assets/property1.jpg',
-    price: 120,
-    location: 'Casablanca, Morocco',
-  },
-  {
-    id: 2,
-    title: 'Cozy Beach House',
-    description: 'Relax by the sea in this peaceful beach house.',
-    imageUrl: '/assets/property2.jpg',
-    price: 200,
-    location: 'Agadir, Morocco',
-  },
-]
+---
 
+## 🎯 Objectives
+By completing this project, you will:
+- Gain hands-on experience setting up a **Next.js** application for production.
+- Use **TypeScript** for type safety and maintainable code.
+- Configure **TailwindCSS** for responsive, accessible UI.
+- Implement **ESLint** to ensure clean and consistent code.
+- Establish a clear, industry-standard folder structure.
+
+---
+
+## ⚙️ Tech Stack
+- **Next.js 13+** (Pages Router)
+- **TypeScript**
+- **TailwindCSS**
+- **ESLint**
+
+---
+
+## 🗂 Folder Structure
