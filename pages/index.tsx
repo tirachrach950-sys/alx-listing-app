@@ -1,43 +1,43 @@
-# alx-listing-app-
-pages/index.tsx,components/common/Card.tsx,components/common/Button.tsx,interfaces/index.ts,constants/index.ts,public/assets/,README.md
-import Head from 'next/head'
-import Card from '../components/common/Card'
-import Button from '../components/common/Button'
-import '../styles/globals.css'
+// pages/index.tsx
+import type { NextPage } from "next";
+import Card from "../components/common/Card";
+import Button from "../components/common/Button";
+import { SITE_NAME, DEFAULT_IMAGE } from "../constants";
 
-export default function Home() {
+const Home: NextPage = () => {
   return (
-    <>
-      <Head>
-        <title>ALX Listing App</title>
-        <meta name="description" content="ALX Listing App - Airbnb-style listing scaffold" />
-      </Head>
+    <div className="min-h-screen bg-gray-100 p-8">
+      <header className="mb-8">
+        <h1 className="text-4xl font-bold">{SITE_NAME}</h1>
+      </header>
 
-      <main className="min-h-screen bg-gray-100 p-8">
-        <h1 className="text-3xl font-bold text-center mb-8">ALX Listing App</h1>
+      <main className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <Card
+          title="Sample Property 1"
+          description="Beautiful apartment in the city center"
+          image={DEFAULT_IMAGE}
+        >
+          <Button label="Book Now" />
+        </Card>
 
-        <section className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <Card
-            title="Modern Apartment"
-            description="Beautiful 2-bedroom apartment in downtown."
-            image="/assets/placeholder.png"
-          />
-          <Card
-            title="Beachside Villa"
-            description="Relax by the sea with amazing sunsets."
-            image="/assets/placeholder.png"
-          />
-          <Card
-            title="Cozy Cabin"
-            description="Quiet getaway surrounded by nature."
-            image="/assets/placeholder.png"
-          />
-        </section>
+        <Card
+          title="Sample Property 2"
+          description="Cozy house with garden"
+          image={DEFAULT_IMAGE}
+        >
+          <Button label="Book Now" />
+        </Card>
 
-        <div className="text-center mt-8">
-          <Button label="Explore More" />
-        </div>
+        <Card
+          title="Sample Property 3"
+          description="Luxury villa with pool"
+          image={DEFAULT_IMAGE}
+        >
+          <Button label="Book Now" />
+        </Card>
       </main>
-    </>
-  )
-}
+    </div>
+  );
+};
+
+export default Home;
