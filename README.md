@@ -24,4 +24,38 @@ By completing this project, you will:
 
 ---
 
+---
+
+## 🧱 Components
+
+### 🪄 Button.tsx
+A reusable button with customizable label and click handler.
+
+### 🏘 Card.tsx
+Displays property details like image, title, description, and price.
+
+---
+
+## 🧩 TypeScript Interfaces
+All interfaces are defined inside `interfaces/index.ts` for maintainability.
+
+---
+
+## 🧰 Constants
+Reusable data (e.g., API URLs, placeholder property listings) are stored in `constants/index.ts`.
+
+---
+
+## 🖼 Assets
+Store all project images (e.g., property photos, icons) under `public/assets/`.
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Install Dependencies
+```bash
+npm install
+
+
 ## 🗂 Folder Structure
